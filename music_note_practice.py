@@ -1,5 +1,6 @@
 import random
 import re
+import time
 
 # Define the mapping between numbers and note names
 note_mapping = {
@@ -69,14 +70,23 @@ def get_group_size():
 def run_practice(num_runs, group_size, note_type):
     total_correct = 0
     total_questions = num_runs * group_size
+    run_times = []
     for i in range(num_runs):
+        start_time = time.time()
         print(f'Running practice {i+1} of {num_runs}.')
         total_correct += music_note_practice(group_size, note_type)
-        print()
+        end_time = time.time()
+        run_time = end_time - start_time
+        run_times.append(run_time)
+        print(f'Time for run {i+1}: {run_time * 1000} ms\n')
 
     # Calculate and print the percentage of correct answers
     correct_percentage = (total_correct / total_questions) * 100
     print(f'You got {correct_percentage}% correct!')
+
+    # Print the average time for all runs
+    average_time = sum(run_times) / len(run_times)
+    print(f'Average time for all runs: {average_time * 1000} ms')
 
 # Get user inputs
 num_runs = int(input('Enter the number of runs: '))

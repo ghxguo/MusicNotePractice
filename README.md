@@ -25,6 +25,7 @@ Mac & Linux：
 - Generates a group of random notes without duplicates
 - Checks the user's answers and provides feedback
 - Calculates and displays the percentage of correct answers at the end of all runs
+- Measure time spent for each run, and dispay average at the end of all runs
 
 ## Usage
 
