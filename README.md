@@ -2,6 +2,22 @@
 
 This Python program is designed to help users practice their music note recognition skills. It generates a group of random notes and asks the user to identify them. The user can specify the number of practice runs, the size of the note group, and the type of note names to use.
 
+考虑到很多朋友没有开发基础，这里说一下详细的步骤。
+
+Windows：
+
+1. 首先你要安装python，用windows的朋友可以直接去商店里面搜python，下载安装最新版本就好。
+2. 然后下载这个包，解压后，在有`music_note_practice.py`这个文件的文件夹里，右键点击空白处，选择`open in terminal`
+3. 然后在命令行里输入
+```
+python music_note_practice.py
+```
+然后跟着屏幕上的提示输入对应信息就好了。需要你有一点英文基础。
+
+Mac & Linux：
+
+相信用mac或者linux都有一定的开发基础，具体步骤根上面类似，需要先安装python，然后在terminal里运行命令，注意文件路径。
+
 ## Features
 
 - Generates a group of random notes without duplicates
