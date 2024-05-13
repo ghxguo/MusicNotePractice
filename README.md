@@ -14,6 +14,8 @@ python music_note_practice.py
 ```
 然后跟着屏幕上的提示输入对应信息就好了。需要你有一点英文基础。
 
+Note: `type of node name` 输入`name`对应唱名，输入`CDE`对应级数。
+
 Mac & Linux：
 
 相信用mac或者linux都有一定的开发基础，具体步骤根上面类似，需要先安装python，然后在terminal里运行命令，注意文件路径。
