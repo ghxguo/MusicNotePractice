@@ -31,11 +31,14 @@ def check_answers(notes, answers, note_type):
     correct_count = 0
     incorrect_notes = []
     for i, note in enumerate(notes):
-        correct_answers = get_note_name(note, note_type)
-        if answers[i] in correct_answers:
-            correct_count += 1
-        else:
-            incorrect_notes.append((i+1, note, correct_answers[0]))
+        try:
+            correct_answers = get_note_name(note, note_type)
+            if answers[i] in correct_answers:
+                correct_count += 1
+            else:
+                incorrect_notes.append((i+1, note, correct_answers[0]))
+        except IndexError:
+            print(f"No answer provided for note {i+1}.")
     if correct_count == len(notes):
         print('All answers are correct. Good job!')
     else:
