@@ -69,7 +69,8 @@ def get_group_size():
 def run_practice(num_runs, group_size, note_type):
     total_correct = 0
     total_questions = num_runs * group_size
-    for _ in range(num_runs):
+    for i in range(num_runs):
+        print(f'Running practice {i+1} of {num_runs}.')
         total_correct += music_note_practice(group_size, note_type)
         print()
 
